@@ -345,6 +345,39 @@ h1 {
 /* ── SERVICES ─────────────────────────────────────────── */
 .services { background: var(--bg); }
 
+.services--video {
+  position: relative;
+  overflow: hidden;
+}
+
+.services-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.services-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10,0,0,0.72);
+  z-index: 1;
+}
+
+.services--video .section-header,
+.services--video .cards,
+.services--video .doc-overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.services--video .section-header h2 { color: #fff; }
+.services--video .section-header p { color: rgba(255,255,255,0.8); }
+.services--video .section-tag { background: rgba(192,57,43,0.3); color: #ff9e9e; }
+
 .cards {
   display: grid;
   gap: 1.5rem;
