@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('contactForm');
   if (!form) return;
 
-  form.addEventListener('submit', function (event) {
+  form.addEventListener('submit', async function (event) {
     event.preventDefault();
 
     const name = form.querySelector('#name').value.trim();
@@ -222,11 +222,27 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.disabled = true;
     btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Invio in corso...';
 
-    setTimeout(function () {
-      alert('Grazie ' + name + '! La tua richiesta è stata inviata.\nTi ricontatteremo al più presto.');
-      form.reset();
+    try {
+      const response = await fetch('https://formspree.io/f/xpqnloql', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        btn.innerHTML = '<i class="fa-solid fa-check"></i> Messaggio inviato!';
+        form.reset();
+        setTimeout(function () {
+          btn.disabled = false;
+          btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Invia richiesta';
+        }, 3000);
+      } else {
+        throw new Error();
+      }
+    } catch (e) {
+      alert('Errore durante l\'invio. Riprova o contattaci telefonicamente.');
       btn.disabled = false;
       btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Invia richiesta';
-    }, 1200);
+    }
   });
 });
