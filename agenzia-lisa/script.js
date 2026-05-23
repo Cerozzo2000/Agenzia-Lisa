@@ -93,13 +93,9 @@ document.addEventListener('DOMContentLoaded', function () {
     reve: {
       titolo: 'Contratto R.E.V.E.',
       docs: [
-        'Documento d\'identità in corso di validità',
-        'Codice fiscale o permesso di soggiorno',
-        'Prova di residenza in Italia',
-        'Titolo di proprietà del veicolo (con traduzione se necessario)',
         'Carta di circolazione estera',
-        'Targa estera del veicolo',
-        'Assicurazione RCA',
+        'Data certa',
+        'Documenti di riconoscimento dell\'utilizzatore del veicolo',
       ]
     },
     bollo: {
@@ -108,6 +104,31 @@ document.addEventListener('DOMContentLoaded', function () {
         'Carta di circolazione del veicolo',
         'Codice fiscale dell\'intestatario',
         'Metodo di pagamento (contanti o carta)',
+      ]
+    },
+    'patente-internazionale': {
+      titolo: 'Patenti internazionali',
+      docs: [
+        'Patente di guida in corso di validità',
+        'Carta d\'identità in corso di validità',
+        'Codice fiscale',
+        '1 foto tessera recente',
+      ]
+    },
+    'targa-ciclomotore': {
+      titolo: 'Targhe ciclomotori',
+      docs: [
+        'Documento di identità in corso di validità',
+        'Codice fiscale',
+        'Libretto del ciclomotore',
+      ]
+    },
+    visure: {
+      titolo: 'Visure',
+      docs: [
+        'Documento di identità in corso di validità',
+        'Codice fiscale',
+        'Targa del veicolo da visionare',
       ]
     }
   };
