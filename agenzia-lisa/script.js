@@ -45,23 +45,18 @@ document.addEventListener('DOMContentLoaded', function () {
     trasferimento: {
       titolo: 'Trasferimento di proprietà',
       docs: [
-        'Carta d\'identità di acquirente e venditore',
-        'Codice fiscale di acquirente e venditore',
-        'Libretto di circolazione (carta di circolazione)',
-        'Carta di proprietà o foglio complementare',
-        'Certificato di revisione in corso di validità',
-        'Assicurazione RCA in corso di validità',
+        'Documenti di riconoscimento venditore',
+        'Documenti di riconoscimento acquirente',
+        'Carta di circolazione',
+        'CDP o CDPD (Certificato di proprietà)',
       ]
     },
     patente: {
       titolo: 'Rinnovo patente',
       docs: [
-        'Patente di guida in scadenza o già scaduta',
-        'Carta d\'identità in corso di validità',
-        'Codice fiscale',
-        'Certificato medico (medico di base o CML)',
-        '1 foto tessera recente',
-        'Marca da bollo da €16,00',
+        'Patente',
+        'Fototessera a fondo bianco',
+        'Visita medica in sede',
       ]
     },
     immatricolazione: {
@@ -71,9 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'Codice fiscale o tessera sanitaria',
         'Titolo di proprietà del veicolo (fattura o atto di vendita)',
         'Carta di circolazione estera',
-        'Targa originale estera',
         'Certificato di conformità (COC) o perizia tecnica',
-        'Assicurazione RCA',
         'Prova di residenza in Italia',
       ]
     },
