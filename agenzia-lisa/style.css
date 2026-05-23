@@ -368,8 +368,7 @@ h1 {
 }
 
 .services--video .section-header,
-.services--video .cards,
-.services--video .doc-overlay {
+.services--video .cards {
   position: relative;
   z-index: 2;
 }
