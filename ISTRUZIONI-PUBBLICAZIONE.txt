@@ -1,0 +1,17 @@
+AGGIORNAMENTO AGENZIA LISA
+
+1. Apri il repository GitHub collegato a Vercel.
+2. Carica TUTTI i file presenti in questa cartella nella cartella principale del repository.
+3. Quando GitHub chiede se sostituire i file esistenti, conferma.
+4. Conferma il caricamento con il pulsante "Commit changes".
+5. Attendi circa 1-2 minuti: Vercel pubblicherà automaticamente il nuovo aggiornamento.
+
+IMPORTANTE
+- Non caricare soltanto index.html.
+- Mantieni invariati i nomi dei file.
+- Dopo la pubblicazione controlla homepage, Privacy Policy, WhatsApp e modulo contatti.
+
+PASSAGGI ESTERNI DA ESEGUIRE DOPO LA PUBBLICAZIONE
+- In Google Search Console invia: https://agenzialisa2.it/sitemap.xml
+- Verifica che il modulo invii le richieste all'indirizzo corretto configurato su Formspree.
+- Per statistiche e campagne, collega Google Analytics e configura come conversioni i clic su telefono, WhatsApp e invio modulo.
