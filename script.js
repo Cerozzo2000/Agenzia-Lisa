@@ -1,8 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  // ── Popup annuncio R.E.V.E.
+  // ── Popup annuncio: una sola volta per sessione, dopo qualche secondo
   const overlay = document.getElementById('popupOverlay');
   function closePopup() { overlay.classList.add('hidden'); }
+  try {
+    if (!sessionStorage.getItem('popupVisto')) {
+      setTimeout(function () {
+        overlay.classList.remove('hidden');
+        sessionStorage.setItem('popupVisto', '1');
+      }, 8000);
+    }
+  } catch (err) {}
   document.getElementById('popupClose').addEventListener('click', closePopup);
   document.getElementById('popupClose2').addEventListener('click', closePopup);
   document.getElementById('popupCta').addEventListener('click', closePopup);
@@ -230,6 +238,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       if (response.ok) {
+        if (window.trackEvent) { window.trackEvent('invio_modulo', { servizio: (form.querySelector('#service') || {}).value || '' }); }
         btn.innerHTML = '<i class="fa-solid fa-check"></i> Messaggio inviato!';
         form.reset();
         setTimeout(function () {
