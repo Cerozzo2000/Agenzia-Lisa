@@ -10,3 +10,5 @@ COSA CAMBIA
 - Link dei servizi con etichetta specifica per servizio
 - tracking.js: registra chiamate, WhatsApp e invii del modulo
 - Popup del nuovo servizio: una volta sola per visita, dopo 8 secondi
+- Box in alto: "2 Sedi operative"
+- Sezione recensioni: pulsante "Lascia una recensione su Google" (link diretto alla pagina recensioni Google)
