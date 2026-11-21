@@ -12,3 +12,5 @@ COSA CAMBIA
 - Popup del nuovo servizio: una volta sola per visita, dopo 8 secondi
 - Box in alto: "2 Sedi operative"
 - Sezione recensioni: pulsante "Lascia una recensione su Google" (link diretto alla pagina recensioni Google)
+
+v5: style.css aggiornato (logo in alto più piccolo, sottotitolo "Studio di consulenza automobilistica" più staccato dal nome).
