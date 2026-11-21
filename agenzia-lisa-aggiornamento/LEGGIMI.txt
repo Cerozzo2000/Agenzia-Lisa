@@ -1,0 +1,14 @@
+AGGIORNAMENTO SITO AGENZIA LISA
+Carica TUTTI i file di questa cartella nella cartella principale del repository GitHub
+(sostituendo quelli esistenti) e conferma con "Commit changes". Vercel pubblica da solo.
+tracking.js e' un file nuovo.
+
+COSA CAMBIA
+- Anni di esperienza: 30+
+- A Quarto: indicata l'agenzia della fondatrice (Agenzia Lisa di Caputo Maria), separata
+- Form: Iscrizioni R.E.V.E., targa monopattini
+- Link dei servizi con etichetta specifica per servizio
+- tracking.js: registra chiamate, WhatsApp e invii del modulo
+- Popup del nuovo servizio: una volta sola per visita, dopo 8 secondi
+- Box in alto: "2 Sedi operative"
+- Sezione recensioni: pulsante "Lascia una recensione su Google" (link diretto alla pagina recensioni Google)
